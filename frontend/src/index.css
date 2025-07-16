@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add spacing between label and input */
+label + input {
+  margin-top: 1rem;
+}
+
+/* Add spacing between recommendation list items */
+ul.recommendation-list > li + li {
+  margin-top: 3rem;
+}
+
+/* Add spacing between component score badges in recommendations */
+.recommendation-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem; /* vertical horizontal */
+}
+.recommendation-scores > span {
+  margin: 0;
+}
+
+/* Style for total score in recommendations */
+.total-score {
+  color: #be185d; /* pink-700 */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
